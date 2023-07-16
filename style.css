@@ -6,26 +6,42 @@
 .container { 
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-end;
     border: 2px solid white;
     border-radius: 10px ;
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    float: right
+    width: 10%;
+    float: right;
+    height: 90px;
+    position: relative;
+    margin-right: 25%;
+    margin-top: 100px;
 }
 
 .presentation { 
     border: 2px solid white;
-    border-radius: 47% 53% 52% 48% / 55% 50% 50% 45% ;
+    border-radius: 10px ;
     width: 45%;
     height: auto;
     align-items: center;
+    margin-left: 15%;
+    margin-top: 90px;
+}
+
+.titre { 
+    align-items: center;
+    margin-left: 200px;
 }
 
 p { 
-    margin: 50px auto;
-    padding: 10%;
+    align-items: center;
+    margin: 20px;
 }
 
+.footer {
+    border: 2px solid white;
+    align-items: center;
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-top: 10%;
+    margin-bottom: 8%;
+}
