@@ -1,0 +1,21 @@
+body {
+    height: 50%;
+    width: 70%;
+    margin: 15px auto;
+    border: 2px solid white;
+    background-color: black;
+    color: aliceblue;
+}
+
+.profil {
+    border: 2px solid white;
+    margin: 15px 15px 15px 15px;
+    object-fit: cover;
+    float: left;
+
+}
+
+section {
+    margin-left: 50px;
+
+}
