@@ -8,6 +8,7 @@ body {
     width: 70%;
     margin: 15px auto;
     border: 2px solid white;
+    overflow-x:hidden;
 }
 
 
@@ -185,3 +186,4 @@ position: relative;
     border: solid 0 transparent;
     background-color: white;
     }
+
