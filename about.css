@@ -32,9 +32,16 @@ main {
 }
 
 .contenaire { 
-    border: 5px solid #acc6ff;
     height: 9%;
     width: 7.5%;
     margin-left: 50%;
 }
 
+::-webkit-scrollbar {
+    width: 7px;
+    background: #41698a;
+    }
+    ::-webkit-scrollbar-thumb {
+    border: solid 0 transparent;
+    background-color: #7f9f34;
+    }
