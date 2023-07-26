@@ -1,95 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Aunelia's Home</title>
-    <link href="home.css" rel="stylesheet" />
-    <link href="home.js" rel="stylesheet" />
-    <video id="background-video" autoplay loop muted>
-      <source src="images/etoile.mp4" type="video/mp4" />
-      <div class="curseur"></div>
-    </video>
-  </head>
-  <body>
-    <header>
-      <link
-        href="https://fonts.googleapis.com/css?family=Sacramento:400"
-        rel="stylesheet"
-        type="text/css"
-      />
-      <h1 class="neontete">Aunélia</h1>
-    </header>
-    <nav class="nav">
-      <div class="container">
-        <a href="about.html"> About me </a>
-        <a href="blog.html"> Blog </a>
-        <a href="idk.html"> idk</a>
-        <a href="idk2.html"> idk2</a>
-      </div>
-    </nav>
-    <main>
-      <section>
-        <article class="presentation">
-          <div class="titre">
-            <h3>Welcome to my world !</h3>
-          </div>
-          <image
-            class="profil"
-            src="images/cutedog.gif"
-            alt="image"
-            height="150px"
-            width="150px"
-          /><br />
-          <br />
-          <p>
-            eveniet totam, aliquid Lorem, ipsum dolor sit amet consectetur
-            adipisicing elit. Voluptatem explicabo nostrum voluptatum
-            reprehenderit earum delectus sit porro architecto, dolorem voluptas,
-            optio aperiam laborum omnis facilis nisi accusantium ab vel quis?
-          </p>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae
-            qui atque fuga animi, quisquam aperiam voluptas aliquid harum id
-            amet
-          </p>
-        </article>
-      </section>
-      <aside>
-        <div class="premier">
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
-            eveniet totam, aliquid eum modi est similique Lorem ipsum dolor sit,
-            amet consectetur adipisicing elit. Molestiae qui atque fuga animi,
-            quisquam aperiam voluptas aliquid harum id amet
-          </p>
-        </div>
-        <div class="deuxieme"></div>
-      </aside>
-      <div class="blog">
-        <h3>BANANA</h3>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur <br />
-          adipisicing elit. Quas eveniet totam, aliquid eum <br />
-          modi est similique
-        </p>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae
-          qui atque fuga animi, quisquam aperiam voluptas aliquid harum id amet
-        </p>
-      </div>
-    </main>
-  </body>
-  <footer>
-    <image src="images/immeuble.png" width="100%" height="100%" />
-    <div class="footer">
-      <p>Tout droit reservé blabla</p>
-    </div>
-    <script type="text/javascript">
+
 _uacct = "UA-994360-1";
 urchinTracker();
-</script><script type="text/javascript">
-var colour="#ffffff";
+var colour="#7C5B1A";
 var sparkles=50;
 var x=ox=400;
 var y=oy=300;
@@ -239,8 +151,4 @@ div.style.height=height+"px";
 div.style.width=width+"px";
 div.style.overflow="hidden";
 div.style.backgroundColor=colour;
-return (div);
-}
-</script>
-  </footer>
-</html>
+return (div);}
