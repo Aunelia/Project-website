@@ -1,21 +1,40 @@
+html { 
+    background-color: black;
+    background-image: url(images/flowers.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    }
+
+
 body {
     height: 50%;
     width: 70%;
-    margin: 15px auto;
-    border: 2px solid white;
-    background-color: black;
-    color: aliceblue;
+    margin: auto ;
+    color: black;
 }
 
 .profil {
-    border: 2px solid white;
+    border: 2px solid;
     margin: 15px 15px 15px 15px;
     object-fit: cover;
     float: left;
-
 }
 
 section {
     margin-left: 50px;
-
+    margin-right: 50px;
 }
+
+main { 
+    background: linear-gradient(#41698a,#7f9f34);
+}
+
+.contenaire { 
+    border: 5px solid #acc6ff;
+    height: 9%;
+    width: 7.5%;
+    margin-left: 50%;
+}
+
