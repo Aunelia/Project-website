@@ -16,10 +16,10 @@ body {
 }
 
 .profil {
-    border: 2px solid;
     margin: 15px 15px 15px 15px;
     object-fit: cover;
     float: left;
+    box-shadow: 3px 3px 2px 0px rgba(0, 0, 0, 1);
 }
 
 section {
