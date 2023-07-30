@@ -11,8 +11,6 @@ body {
     overflow-x:hidden;
 }
 
-
-
 #background-video {
     height: 100vh;
     width: 100vw;
@@ -90,7 +88,6 @@ margin: 15px 110px auto 15px;
 float: right;
 position: relative;
 display: block;
-
 }
 
 .presentation { 
@@ -186,4 +183,5 @@ position: relative;
     border: solid 0 transparent;
     background-color: white;
     }
+
 
