@@ -1,0 +1,158 @@
+/* css animations */
+
+  /* titre neon */ 
+
+.neontete {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    margin-left: 270px;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px blueviolet,
+        0 0 82px blueviolet,
+        0 0 92px blueviolet,
+        0 0 102px blueviolet,
+        0 0 151px blueviolet;
+    font-size: 40px;  
+    border: 0.2rem solid #fff;
+    border-radius: 10px;
+    padding: 15px;
+    width: 15%;
+    box-shadow: 0 0 .2rem #fff,
+                0 0 .2rem #fff,
+                0 0 2rem blueviolet,
+                0 0 0.8rem blueviolet,
+                0 0 2.8rem blueviolet,
+                inset 0 0 1.3rem blueviolet;
+                background: #111;
+                    animation: pulsate 1.5s infinite alternate;  
+}
+
+@keyframes pulsate {
+    
+    100% {
+
+        text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #fff,
+        0 0 40px #bc13fe,
+        0 0 80px #bc13fe,
+        0 0 90px #bc13fe,
+        0 0 100px #bc13fe,
+        0 0 150px #bc13fe;
+    
+    }
+    
+    0% {
+
+        text-shadow:
+        0 0 2px #fff,
+        0 0 4px #fff,
+        0 0 6px #fff,
+        0 0 10px #bc13fe,
+        0 0 45px #bc13fe,
+        0 0 55px #bc13fe,
+        0 0 70px #bc13fe,
+        0 0 80px #bc13fe;
+}
+}
+
+/* Bongo cat */
+
+.bongo-cat {
+    width: 120px;
+    height: 120px;
+    margin: 0px 0px 0px 55px;
+}
+
+:root {
+    --bg: transparent;
+    --green: #a5ea9b;
+    --pink: #ff61d8;
+    --blue: #569cfa;
+    --orange: #ffcc81;
+    --cyan: #7ed1e2;
+}
+
+.bongo-cat svg {
+    height: 100%;
+    width: 100%;
+    overflow: visible;
+    align-items: center;
+}
+
+#bongo-cat {
+    fill: var(--bg);
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 4;
+}
+
+#bongo-cat .laptop-cover, #bongo-cat .headphone .band {
+    fill: none;
+}
+#bongo-cat .paw, #bongo-cat .head {
+    stroke: var(--orange);
+}
+#bongo-cat .laptop-keyboard {
+    stroke-width: 2;
+}
+#bongo-cat .terminal-code {
+    stroke-width: 5;
+}
+#bongo-cat .music .note, #bongo-cat .laptop-base, #bongo-cat .laptop-cover, #bongo-cat .paw .pads {
+    stroke: var(--pink);
+}
+#bongo-cat .table line, #bongo-cat .headphone .band, #bongo-cat .headphone .speaker path:nth-child(3) {
+    stroke: var(--green);
+}
+#bongo-cat .terminal-frame, #bongo-cat .laptop-keyboard, #bongo-cat .headphone .speaker path:nth-child(2) {
+    stroke: var(--blue);
+}
+#bongo-cat .terminal-code, #bongo-cat .headphone .speaker path:first-child {
+    stroke: var(--cyan);
+}
+
+/* message qui defile */
+
+.defilant {
+    display: block;
+    float: right;
+    margin : 5px 15px 0px 15px ;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    width: 80%;
+    max-width: 640px;
+    height: 20px;
+}
+.defilant > :first-child {
+    display: inline-block;                
+    padding-right: 4em;                 
+    padding-left: 100%;                  
+    white-space: nowrap;                  
+    animation: defilement-rtl 15s infinite linear;
+
+    animation-name: defilement-rtl;       
+    animation-duration: 15s;             
+    animation-iteration-count: infinite;  
+    animation-timing-function: linear;    
+  }
+
+  .defilant:hover :first-child {
+    animation-play-state: paused;
+  }
+  @keyframes defilement-rtl {
+    0% {
+      transform: translate3d(0,0,0);     
+    }
+    100% {
+      transform: translate3d(-100%,0,0);  
+    }
+  }
+
+

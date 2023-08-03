@@ -1,3 +1,6 @@
+
+/* bongo cat */
+
 document.addEventListener("DOMContentLoaded", () => {
     const ID = "bongo-cat"
     const s = selector => `#${ID} ${selector}`
@@ -112,3 +115,6 @@ document.addEventListener("DOMContentLoaded", () => {
         .add(animateNotes(notesG2), ">0.05")
         .add(animateNotes(notesG3), ">0.25")
 });
+
+/* etoile filante */ 
+
