@@ -1,12 +1,15 @@
 html { 
     background-color: black;
-    background-image: url(images/flowers.jpg);
+    background-image: url(images/arbre.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 
     }
 
+.navbar {
+    margin-left: 80%;
+}
 
 body {
     height: 50%;
@@ -28,20 +31,56 @@ section {
 }
 
 main { 
-    background: linear-gradient(#41698a,#7f9f34);
-}
-
-.contenaire { 
-    height: 9%;
-    width: 7.5%;
-    margin-left: 50%;
+    background: linear-gradient(#86272c,#febcda);
 }
 
 ::-webkit-scrollbar {
     width: 7px;
-    background: #41698a;
+    background: #86272c;
     }
     ::-webkit-scrollbar-thumb {
     border: solid 0 transparent;
-    background-color: #7f9f34;
+    background-color: #febcda;
+    }
+
+    /* i'm animation */
+
+    .h-text{
+        padding-top: 0px;
+        margin-left: 40%;
+    }
+
+    .h-animate .text{
+        position: relative;
+        color: #febcda;
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+    .h-animate .text.first-text{
+        color: #FFF;
+    }
+
+    .text.sec-text:before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: #91353c;
+        border-left: 2px solid #febcda;
+        animation: animate 4s steps(12) infinite;
+    }
+
+    @keyframes animate{
+    
+        40%, 60%{
+            left: calc(100% + 4px);
+        }
+
+        100%{
+            left: 0%;
+        }
+
     }

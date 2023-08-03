@@ -1,6 +1,7 @@
 /* css animations */
 
   /* titre neon */ 
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
 
 .neontete {
     color: #fff;
@@ -11,54 +12,79 @@
         0 0 7px #fff,
         0 0 10px #fff,
         0 0 21px #fff,
-        0 0 42px blueviolet,
+        0 0 42px black,
         0 0 82px blueviolet,
         0 0 92px blueviolet,
         0 0 102px blueviolet,
-        0 0 151px blueviolet;
+        0 0 151px black;
     font-size: 40px;  
     border: 0.2rem solid #fff;
     border-radius: 10px;
     padding: 15px;
     width: 15%;
-    box-shadow: 0 0 .2rem #fff,
+    box-shadow: 0 0 .2rem black,
                 0 0 .2rem #fff,
                 0 0 2rem blueviolet,
-                0 0 0.8rem blueviolet,
+                0 0 0.8rem black,
                 0 0 2.8rem blueviolet,
                 inset 0 0 1.3rem blueviolet;
                 background: #111;
-                    animation: pulsate 1.5s infinite alternate;  
+                    animation: glow 1.5s infinite alternate;  
 }
 
-@keyframes pulsate {
-    
-    100% {
 
-        text-shadow:
-        0 0 4px #fff,
-        0 0 11px #fff,
-        0 0 19px #fff,
-        0 0 40px #bc13fe,
-        0 0 80px #bc13fe,
-        0 0 90px #bc13fe,
-        0 0 100px #bc13fe,
-        0 0 150px #bc13fe;
-    
+@keyframes glow {
+    to {
+     text-shadow: 0 0 4px #fff, 0 0 8px #fff, 0 0 12px black, 0 0 16px #d25ed4, 0 0 20px #d25ed4, 0 0 24px black, 0 0 28px #d25ed4;
     }
-    
-    0% {
+  }
+  .brand-logo{
+          text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 6px #292736, 0 0 8px #292736, 0 0 10px #292736, 0 0 12px #292736, 0 0 14px #292736;
+          animation: glow .59s infinite alternate;
+  }
+/*  navbar */
 
-        text-shadow:
-        0 0 2px #fff,
-        0 0 4px #fff,
-        0 0 6px #fff,
-        0 0 10px #bc13fe,
-        0 0 45px #bc13fe,
-        0 0 55px #bc13fe,
-        0 0 70px #bc13fe,
-        0 0 80px #bc13fe;
+ul{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
+
+ul li
+{
+    position: relative;
+    list-style: none;
+}
+
+ul li a {
+    position: relative;
+    font-size: 20px;
+    text-decoration: none;
+    line-height: 1em;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: white;
+    -webkit-text-stroke: 1px transparent(255,255,255,0.5);
+
+}
+
+ul li a::before{
+    content: attr(data-text);
+    position :  absolute;
+    color: var(--clr);
+    width: 0%;
+    overflow: hidden;
+    transition: 1s;
+    border-right: 3px solid var(--clr) ;
+    -webkit-text-stroke: 1px var(--clr);
+
+}
+
+ul li a:hover::before{
+    width: 100%;
+    filter: drop-shadow(0 0 25px var(--clr));
+
 }
 
 /* Bongo cat */
@@ -154,5 +180,3 @@
       transform: translate3d(-100%,0,0);  
     }
   }
-
-
