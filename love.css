@@ -1,20 +1,27 @@
-*{
-    background-color: transparent;
-    color: white;
-    overflow-x:hidden;
+* {margin:0; padding:0;}
+li {list-style: none;}
+a {text-decoration: none; }
+
+::-webkit-scrollbar-track,::-webkit-scrollbar,::-webkit-scrollbar-thumb {
+    display:none;
 }
 
-body {
-    background-color: black;
-}
-header{
-    height: 0%;
-    width: 50%;
-    align-items: center;
-    margin: 0;
+.navbar {position: fixed; left: 0; top: 0px; width: 80; height: 80; line-height: 1.3; z-index: 1000; background-color: transparent(255,255,255,0.3); transition: all 0.3s ease;}
+.navbar.on {position: fixed; top: -61px;}
+.navbar h1 {float: left; color: #fff; font-size: 40px; padding: 5px 5px 5px 15px; font-family: 'Abel' }
+
+#parallax {text-align: center; color: #fff;}
+#parallax > div {height: 100vh; display: flex; justify-content : center; align-items : center; position: relative;}
+#parallax > div h2 {font-size: 4vw; font-weight: 200;  text-transform: uppercase;}
+#parallax > div h2 strong {font-weight: 700; font-style: italic; display: block;}
+
+.scroll {
+    position: absolute; bottom: 20px; left: 50%; 
+    transform: translatex(-50%);
     z-index: 2;
-    position: relative;
-    margin: 15% 15% 15% 15%;
+    display: inline-block;
+    color: #fff;
+    transition: opacity .3s;
 }
 
 #background-video {
@@ -26,7 +33,7 @@ header{
     right: 0;
     top: 0;
     bottom: 0;
-    z-index: -1;
+    z-index: -100;
     position: absolute;
     }
     
@@ -38,24 +45,19 @@ header{
     transform: translateX(-50%);
     }
 
-#video {
-    height: 50vh;
+    #video {
+        height: 100vh;
     width: 100vw;
     object-fit: cover;
-    position: center;
+    position: top;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -100;
+    position: absolute;
+    }
 
-}
-.carousel {
-    position: relative;
-    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
-    margin-top: 26px;
-}
-
-.carousel-inner {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-}
 
 
 .carousel-open:checked + .carousel-item {
