@@ -2,6 +2,10 @@
     color: aliceblue;
 }
 
+html { 
+    background-color: black;
+}
+
 main {
     height: 1000%;
     width: 70%;
@@ -119,3 +123,4 @@ footer{
     border: solid 0 transparent;
     background-color: white;
     }
+

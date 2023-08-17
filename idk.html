@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>fire</title>
+    <title>love</title>
+    <link href="love.css" rel="stylesheet" />
     <link href="idk.css" rel="stylesheet" />
-    <script src="idk.js"></script>
+
     </head>
 <body>
 <header>
@@ -16,6 +17,44 @@
 </nav> 
 </header>
 <main>
+    <div id="parallax">
+        <div id="fenetre1">
+            <video id="background-video" autoplay loop muted>
+                <source src="images/fireworks.mp4" type="video/mp4" />
+            </video>
+            <div id="bouton">
+            <h2>Scroll Down Button #1</h2>
+            <a href="#fenetre2" class="scroll">scroll<span></span></a>
+            </div>
+        </div>
+        <div id="fenetre2">
+            <video id="video" autoplay loop muted>
+                <source src="images/fire.mp4" type="video/mp4"/>
+            </video>
+            <div class="carousel">
+                <input type="radio" name="carousel" id="carousel-1" class="carousel-inputs" checked>
+                <input type="radio" name="carousel" id="carousel-2" class="carousel-inputs">
+                <input type="radio" name="carousel" id="carousel-3" class="carousel-inputs">
+                <input type="radio" name="carousel" id="carousel-4" class="carousel-inputs">
+                <div class="carousel-inner">
+                  <div class="carousel-slide" style="background-color: #ffcccc;"></div>
+                  <div class="carousel-slide" style="background-color: #ccffcc;"></div>
+                  <div class="carousel-slide" style="background-color: #ccccff;"></div>
+                  <div class="carousel-slide" style="background-color: #ffffcc;"></div>
+                </div>
+                <div class="carousel-indicators">
+                  <label class="carousel-indicator carousel-indicator-1" for="carousel-1"></label>
+                  <label class="carousel-indicator carousel-indicator-2" for="carousel-2"></label>
+                  <label class="carousel-indicator carousel-indicator-3" for="carousel-3"></label>
+                  <label class="carousel-indicator carousel-indicator-4" for="carousel-4"></label>
+                </div>
+              </div>
+        <div id="bouton">
+            <a href="#fenetre1" class="scroll">scroll<span></span></a>
+        </div>
+        </div>
+    </div>
+
 
 </main>
 </footer>

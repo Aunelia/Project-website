@@ -1,86 +1,150 @@
-html { 
-    background-color: black;
-    background-image: url(images/arbre.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
 
-    }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: url("https://assets.codepen.io/7237686/cursor.gif"), auto;
+  }
+  
+  @font-face {
+    font-family: svFont;
+    src: url(https://assets.codepen.io/7237686/rainyhearts.woff) format("woff");
+  }
+  @font-face {
+    font-family: pixelFont;
+    src: url(https://assets.codepen.io/7237686//pixelFont.woff) format("woff");
+  }
 
-.navbar {
-    margin-left: 80%;
-}
-
-body {
-    height: 50%;
-    width: 70%;
-    margin: auto ;
-    color: black;
-}
-
-.profil {
+  .profil {
     margin: 15px 15px 15px 15px;
     object-fit: cover;
     float: left;
     box-shadow: 3px 3px 2px 0px rgba(0, 0, 0, 1);
 }
 
-section {
+  body {
+    background-image: url("https://assets.codepen.io/7237686/bg.png?format=auto");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: svFont;
+    color: var(--text_color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100;
+    width: 100%;
+    padding: 2rem;
+  }
+  @media (max-width: 46.875rem) {
+    body {
+      padding: 1rem;
+    }
+  }
+
+  section {
     margin-left: 50px;
     margin-right: 50px;
 }
 
-main { 
-    background: linear-gradient(#86272c,#febcda);
+  .navbar1 , .navbar2 {
+    border-image-source: url("https://assets.codepen.io/7237686/tab_border.png?format=auto");
+    border-style: solid;
+    border-width: 20px;
+    border-image-slice: 24 22;
+    border-image-repeat: round;
+    border-radius: 20px;
+    width: 4.5rem;
+    height: 5rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  background-color: #ffc878;
 }
 
-::-webkit-scrollbar {
-    width: 7px;
-    background: #86272c;
+.navbar1 {
+  margin-left: 100px;
+
+}
+
+.navbar2 {
+  margin-left: 500px;
+}
+
+  .btn {
+    display: inline-block;
+    background-color: var(--container_color);
+    border: none;
+    border-radius: 1.25rem;
+  }
+  
+  h1,
+  h2,
+  h3 {
+    font-weight: 500;
+  }
+  
+  h1,
+  h2,
+  h3,
+  p,
+  span {
+    user-select: none;
+  }
+  
+  .disabled img {
+    pointer-events: none;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 0.6rem;
+    background: #db7812;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #ad520b;
+  }
+  
+  .marquee {
+    z-index: -10;
+    position: fixed;
+    opacity: 0.8;
+    display: flex;
+    animation: marquee 150s linear infinite running;
+  }
+  .marquee .clouds {
+    width: 100%;
+  }
+  
+  @keyframes marquee {
+    0% {
+      transform: translateX(0);
     }
-    ::-webkit-scrollbar-thumb {
-    border: solid 0 transparent;
-    background-color: #febcda;
+    100% {
+      transform: translateX(-50%);
     }
+  }
 
-    /* i'm animation */
-
-    .h-text{
-        padding-top: 0px;
-        margin-left: 40%;
+.propos {
+    position: relative;
+    width: 100%;
+    max-width: 60rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-style: solid;
+    border-width: 20px;
+    border-image-slice: 24 22;
+    border-image-repeat: round;
+    border-radius: 20px;
+    border-image-source: url("https://assets.codepen.io/7237686/tooltipborder.png");
+    background-color: #ffc878;
+  }
+  @media (max-width: 65rem) {
+    .menu {
+      flex-direction: row;
     }
-
-    .h-animate .text{
-        position: relative;
-        color: #febcda;
-        font-size: 30px;
-        font-weight: 600;
-    }
-
-    .h-animate .text.first-text{
-        color: #FFF;
-    }
-
-    .text.sec-text:before{
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        background-color: #91353c;
-        border-left: 2px solid #febcda;
-        animation: animate 4s steps(12) infinite;
-    }
-
-    @keyframes animate{
-    
-        40%, 60%{
-            left: calc(100% + 4px);
-        }
-
-        100%{
-            left: 0%;
-        }
-
-    }
+  }

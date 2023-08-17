@@ -1,0 +1,34 @@
+html { 
+    background-color: black;
+    background-image: url(images/arbre.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    }
+
+.navbar {
+    margin-left: 80%;
+}
+
+body {
+    height: 70%;
+    width: 50%;
+    margin: auto;
+    z-index: 1;
+}
+
+
+main { 
+    background: linear-gradient(#86272c,#febcda);
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+    background: #86272c;
+    }
+    ::-webkit-scrollbar-thumb {
+    border: solid 0 transparent;
+    background-color: #febcda;
+    }
