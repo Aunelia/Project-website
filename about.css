@@ -22,8 +22,69 @@
     float: left;
     box-shadow: 3px 3px 2px 0px rgba(0, 0, 0, 1);
 }
+.menu {
+  width: 100%;
+  max-width: 60rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+p { 
+  margin: 20px 20px 20px 20px; 
 
-  body {
+}
+.btn {
+  display: inline-block;
+  background-color: var(--container_color);
+  border: none;
+  border-radius: 1.25rem;
+}
+
+.menu {
+  width: 100%;
+  max-width: 60rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+@media (max-width: 65rem) {
+  .menu {
+    flex-direction: row;
+  }
+}
+.menu__tabs__container {
+  padding-left: 4rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+@media (max-width: 65rem) {
+  .menu__tabs__container {
+    width: 5rem;
+    flex-direction: column;
+    padding-left: 0;
+    overflow: auto;
+  }
+}
+.menu__tabs__container .menu__tab {
+  border-image-source: url("https://assets.codepen.io/7237686/tab_border.png?format=auto");
+  border-style: solid;
+  border-width: 20px;
+  border-image-slice: 24 22;
+  border-image-repeat: round;
+  border-radius: 20px;
+  width: 4.5rem;
+  height: 5rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffc878;
+}
+
+body {
     background-image: url("https://assets.codepen.io/7237686/bg.png?format=auto");
     background-size: cover;
     background-repeat: no-repeat;
