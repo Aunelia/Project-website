@@ -1,6 +1,6 @@
 
   
-  * {
+  * {    
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -17,11 +17,20 @@
   }
 
   .profil {
-    margin: 15px 15px 15px 15px;
-    object-fit: cover;
+    margin: 15px 15px 15px 40px;
     float: left;
     box-shadow: 3px 3px 2px 0px rgba(0, 0, 0, 1);
 }
+
+h3 { 
+  margin: 0px 0px 0px 50px;
+  font-weight: 500;
+}
+
+p {
+  margin: 20px 20px 20px 20px; 
+}
+
 .menu {
   width: 100%;
   max-width: 60rem;
@@ -30,10 +39,7 @@
   flex-direction: column;
   position: relative;
 }
-p { 
-  margin: 20px 20px 20px 20px; 
 
-}
 .btn {
   display: inline-block;
   background-color: var(--container_color);
@@ -104,10 +110,6 @@ body {
     }
   }
 
-  section {
-    margin-left: 50px;
-    margin-right: 50px;
-}
 
   .navbar1 , .navbar2 {
     border-image-source: url("https://assets.codepen.io/7237686/tab_border.png?format=auto");
@@ -140,15 +142,7 @@ body {
     border: none;
     border-radius: 1.25rem;
   }
-  
-  h1,
-  h2,
-  h3 {
-    font-weight: 500;
-  }
-  
-  h1,
-  h2,
+    
   h3,
   p,
   span {
@@ -189,13 +183,11 @@ body {
   }
 
 .propos {
+  padding: 0px;
     position: relative;
     width: 100%;
     max-width: 60rem;
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    position: relative;
     border-style: solid;
     border-width: 20px;
     border-image-slice: 24 22;
@@ -209,3 +201,5 @@ body {
       flex-direction: row;
     }
   }
+
+  

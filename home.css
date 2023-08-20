@@ -107,12 +107,7 @@ position: relative;
 footer{
     background-color: transparent;
     margin : auto;
-}
-
-.immeuble {
-    height: 100%;
     width: 70%;
-    margin : 0px 15px 15px 227px;
 }
 
 ::-webkit-scrollbar {
