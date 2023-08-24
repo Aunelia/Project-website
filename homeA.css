@@ -1,47 +1,71 @@
 /* css animations */
 
   /* titre neon */ 
-@import url('https://fonts.googleapis.com/css?family=Pacifico');
+  @import url("https://fonts.googleapis.com/css?family=Sacramento&display=swap");
 
-.neontete {
-    color: #fff;
-    display: flex;
-    align-items: center;
-    margin-left: 270px;
-    text-shadow:
-        0 0 7px #fff,
-        0 0 10px #fff,
-        0 0 21px #fff,
-        0 0 42px black,
-        0 0 82px blueviolet,
-        0 0 92px blueviolet,
-        0 0 102px blueviolet,
-        0 0 151px black;
-    font-size: 40px;  
-    border: 0.2rem solid #fff;
-    border-radius: 10px;
-    padding: 15px;
-    width: 15%;
-    box-shadow: 0 0 .2rem black,
-                0 0 .2rem #fff,
-                0 0 2rem blueviolet,
-                0 0 0.8rem black,
-                0 0 2.8rem blueviolet,
-                inset 0 0 1.3rem blueviolet;
-                background: #111;
-                    animation: glow 1.5s infinite alternate;  
-}
-
-
-@keyframes glow {
-    to {
-     text-shadow: 0 0 4px #fff, 0 0 8px #fff, 0 0 12px black, 0 0 16px #d25ed4, 0 0 20px #d25ed4, 0 0 24px black, 0 0 28px #d25ed4;
+  h1 {
+    font-size: 80px ;
+    text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
+      0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092;
+    color: #fccaff; 
+    text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+      color: #fff6a9;
+    font-family: "Sacramento", cursive;
+    text-align: center;
+    animation: blink 12s infinite;
+    -webkit-animation: blink 12s infinite;
+  }
+  
+  
+  @-webkit-keyframes blink {
+    20%,
+    24%,
+    55% {
+      color: #111;
+      text-shadow: none;
+    }
+  
+    0%,
+    19%,
+    21%,
+    23%,
+    25%,
+    54%,
+    56%,
+    100% {
+   color: #fccaff;
+      text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
+        0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092;
+    text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+      color: #fff6a9;
     }
   }
-  .brand-logo{
-          text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 6px #292736, 0 0 8px #292736, 0 0 10px #292736, 0 0 12px #292736, 0 0 14px #292736;
-          animation: glow .59s infinite alternate;
+  
+  @keyframes blink {
+    20%,
+    24%,
+    55% {
+      color: #111;
+      text-shadow: none;
+    }
+  
+    0%,
+    19%,
+    21%,
+    23%,
+    25%,
+    54%,
+    56%,
+    100% {
+    color: #fccaff;
+      text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
+        0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092; 
+    text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+      color: #fff6a9;
+    }
   }
+  
+
 /*  navbar */
 
 ul{
