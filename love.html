@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>love</title>
     <link href="love.css" rel="stylesheet" />
-    <script src="idk.js"></script>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     </head>
 <body>
@@ -24,20 +23,60 @@
             </video>
             <div id="bouton">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident aut dicta, ea possimus eaque distinctio nulla earum deleniti, dignissimos perspiciatis quasi voluptatibus animi magni debitis a, vel soluta esse repudiandae?</p>
-            <a href="#fenetre2" class="scroll"><span></span></a>
+            <a href="#fenetre2" class="scroll"><span>...</span></a>
             </div>
         </div>
         <div id="fenetre2">
             <video id="video" autoplay loop muted>
                 <source src="images/fire.mp4" type="video/mp4"/>
             </video>
+            <div class="container">
+	
+                <div data-am-fadeshow="next-prev-navigation">
+            
+                    <!-- Radio -->
+                    <input type="radio" name="css-fadeshow" id="slide-1" />
+                    <input type="radio" name="css-fadeshow" id="slide-2" />
+                    <input type="radio" name="css-fadeshow" id="slide-3" />
+            
+                    <!-- Slides -->
+                    <div class="fs-slides">
+                        <div class="fs-slide" style="background-image: url();"></div>
+                        <div class="fs-slide" style="background-image: url();"></div>
+                        <div class="fs-slide" style="background-image: url();"></div>
+                    </div>
+            
+                    <!-- Quick Navigation -->
+                    <div class="fs-quick-nav">
+                        <label class="fs-quick-btn" for="slide-1"></label>
+                        <label class="fs-quick-btn" for="slide-2"></label>
+                        <label class="fs-quick-btn" for="slide-3"></label>
+                    </div>
+                    
+                    <!-- Prev Navigation -->
+                    <div class="fs-prev-nav">
+                        <label class="fs-prev-btn" for="slide-1"></label>
+                        <label class="fs-prev-btn" for="slide-2"></label>
+                        <label class="fs-prev-btn" for="slide-3"></label>
+                    </div>
+                    
+                    <!-- Next Navigation -->
+                    <div class="fs-next-nav">
+                        <label class="fs-next-btn" for="slide-1"></label>
+                        <label class="fs-next-btn" for="slide-2"></label>
+                        <label class="fs-next-btn" for="slide-3"></label>
+                    </div>
+            
+                </div>
+                
+            </div>
         <div id="bouton">
-        
-            <a href="#fenetre1" class="scroll"><span></span></a>
+            <a href="#fenetre1" class="scroll"><span>...</span></a>
         </div>
         </div>
     </div>
 </main>
 </footer>
+<script src="love.js"></script>
 </body>
 </html>
