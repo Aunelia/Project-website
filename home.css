@@ -16,7 +16,6 @@ main {
     background: linear-gradient( black, 50%, #1F52B7);
 }
 
-
 .navbar { 
     display: flex;
     flex-direction: column;
@@ -35,8 +34,7 @@ a {
 }
 
 .presentation { 
-    border-radius: 10px ;
-    width: 45%;
+    width: 40%;
     height: auto;
     align-items: center;
     margin-left: 15%;
@@ -49,7 +47,6 @@ a {
     margin: 0px 15px 0px 15px;
     object-fit: cover;
     float: left;
-
 }
 
 .titre { 
