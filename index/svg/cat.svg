@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 783.55 354.91">
+<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 783.55 354.91" preserveAspectRatio="xMinYMid meet"  >
   <g id="bongo-cat">
     <g class="head">
       <path
@@ -229,85 +229,14 @@
     </g>
   </g>
 
-  <style>
 
-    .bongo-cat {
-      width: 100px;
-      height: 100px;
-      margin: 0px 0px 0px 55px;
-    }
+  <script href="../lib/gsap.min.js"></script>
 
-    :root {
-      --bg: transparent;
-      --green: #a5ea9b;
-      --pink: #ff61d8;
-      --blue: #569cfa;
-      --orange: #ffcc81;
-      --cyan: #7ed1e2;
-    }
-
-    .bongo-cat svg {
-      height: 100%;
-      width: 100%;
-      overflow: visible;
-      align-items: center;
-    }
-
-    #bongo-cat {
-      fill: var(--bg);
-      stroke-linecap: round;
-      stroke-linejoin: round;
-      stroke-width: 4;
-    }
-
-    #bongo-cat .laptop-cover,
-    #bongo-cat .headphone .band {
-      fill: none;
-    }
-
-    #bongo-cat .paw,
-    #bongo-cat .head {
-      stroke: var(--orange);
-    }
-
-    #bongo-cat .laptop-keyboard {
-      stroke-width: 2;
-    }
-
-    #bongo-cat .terminal-code {
-      stroke-width: 5;
-    }
-
-    #bongo-cat .music .note,
-    #bongo-cat .laptop-base,
-    #bongo-cat .laptop-cover,
-    #bongo-cat .paw .pads {
-      stroke: var(--pink);
-    }
-
-    #bongo-cat .table line,
-    #bongo-cat .headphone .band,
-    #bongo-cat .headphone .speaker path:nth-child(3) {
-      stroke: var(--green);
-    }
-
-    #bongo-cat .terminal-frame,
-    #bongo-cat .laptop-keyboard,
-    #bongo-cat .headphone .speaker path:nth-child(2) {
-      stroke: var(--blue);
-    }
-
-    #bongo-cat .terminal-code,
-    #bongo-cat .headphone .speaker path:first-child {
-      stroke: var(--cyan);
-    }
-  </style>
-
-  <script href="./lib/gsap.min.js"></script>
-
-  <script> 
-  document.addEventListener("DOMContentLoaded", () => {
-      gsap.registerPlugin();
+  <script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", () => {
+    
+    gsap.registerPlugin();
+    
     const ID = "bongo-cat"
     const s = selector => `#${ID} ${selector}`
     const notes = document.querySelectorAll(".note")
@@ -421,6 +350,72 @@
         .add(animateNotes(notesG2), ">0.05")
         .add(animateNotes(notesG3), ">0.25")
 });  
-</script>
+  </script>
 
+
+  <style>
+    :root {
+      --bg: transparent;
+      --green: #a5ea9b;
+      --pink: #ff61d8;
+      --blue: #569cfa;
+      --orange: #ffcc81;
+      --cyan: #7ed1e2;
+    }
+
+
+    #bongo-cat {
+      transform: scale(.35);
+    }
+
+
+    #bongo-cat {
+      fill: var(--bg);
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-width: 4;
+    }
+
+    #bongo-cat .laptop-cover,
+    #bongo-cat .headphone .band {
+      fill: none;
+    }
+
+    #bongo-cat .paw,
+    #bongo-cat .head {
+      stroke: var(--orange);
+    }
+
+    #bongo-cat .laptop-keyboard {
+      stroke-width: 2;
+    }
+
+    #bongo-cat .terminal-code {
+      stroke-width: 5;
+    }
+
+    #bongo-cat .music .note,
+    #bongo-cat .laptop-base,
+    #bongo-cat .laptop-cover,
+    #bongo-cat .paw .pads {
+      stroke: var(--pink);
+    }
+
+    #bongo-cat .table line,
+    #bongo-cat .headphone .band,
+    #bongo-cat .headphone .speaker path:nth-child(3) {
+      stroke: var(--green);
+    }
+
+    #bongo-cat .terminal-frame,
+    #bongo-cat .laptop-keyboard,
+    #bongo-cat .headphone .speaker path:nth-child(2) {
+      stroke: var(--blue);
+    }
+
+    #bongo-cat .terminal-code,
+    #bongo-cat .headphone .speaker path:first-child {
+      stroke: var(--cyan);
+    }
+  </style>
 </svg>
