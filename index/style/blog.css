@@ -34,7 +34,7 @@ font: 400 1.25vw / 1.5 Avenir Next, Avenir, Segoe UI, Roboto, Helvetica, Arial, 
   border-radius:10px;
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
-  background-image: url(images/sea.jpg);
+  background-image: url(../images/sea.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }

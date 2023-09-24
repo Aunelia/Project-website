@@ -6,34 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aunelia's Home</title>
     <!--lien vers les autres languages-->
-    <link href="home.css" rel="stylesheet" />
-    <link href="homeA.css" rel="stylesheet" />
-    <link href="homeV.css" rel="stylesheet" />
+    <link href="style/home.css" rel="stylesheet" />
+    <link href="style/homeanimation.css" rel="stylesheet" />
     <!-- fond -->
     <div class="stars"></div> 
   </head>
   <!-- corps -->
   <body>
     <!--contenue principal-->
-    <div id="root">
-      <div class="lay lay-1"></div>
-      <div class="lay lay-2"></div>
-      <div class="lay lay-3"></div>
-      <div class="lay lay-4"></div>
-      <div class="lay lay-5"></div>
-      <div class="lay lay-6"></div>    
-    </div>
     <main>
       <!-- entete neon-->
       <header>
-        <!--
+        <div id="root">
+          <div class="lay lay-1"></div>
+          <div class="lay lay-2"></div>
+          <div class="lay lay-3"></div>
+          <div class="lay lay-4"></div>
+          <div class="lay lay-5"></div>
+          <div class="lay lay-6"></div>    
+        </div>
         <div id="layers">
           <div class="layer"></div>
           <div class="layer"></div>
           <div class="layer"></div>
           <div class="layer"></div>
           <div class="layer"></div>
-        </div>-->
+        </div>
         <h1 class="neontete">Aunélia</h1>
       </header>
       <!--navbar-->
@@ -41,16 +39,16 @@
         <div class="navbar">
     <ul>
         <li style="--clr:#00ff00">
-            <a href="about/about.html" data-text="&nbsp;About">&nbsp;About&nbsp;</a>
+            <a href="page/about.html" data-text="&nbsp;About">&nbsp;About&nbsp;</a>
         </li>
           <li style="--clr:#00ffff">
-            <a href="blog.html" data-text="&nbsp;Projects">&nbsp;Projects&nbsp; </a>
+            <a href="page/blog.html" data-text="&nbsp;Projects">&nbsp;Projects&nbsp; </a>
         </li>
           <li style="--clr:#ff00b4">
-            <a href="love.html" data-text="&nbsp;Love">&nbsp;Love&nbsp;</a>
+            <a href="page/love.html" data-text="&nbsp;Love">&nbsp;Love&nbsp;</a>
         </li>
           <li style="--clr:#011efe">
-            <a href="neige.html" data-text="&nbsp;Neige">&nbsp;Neige&nbsp;
+            <a href="page/neige.html" data-text="&nbsp;Neige">&nbsp;Neige&nbsp;
               
             </a>
 </ul>
@@ -62,7 +60,7 @@
           <div class="titre">
             <h3>✩ Welcome to my Website ! ✩</h3>
           </div>
-          <a href="art.html">
+          <a href="page/art.html">
           <image
             class="profil"
             src="images/cutedog.gif"
@@ -114,7 +112,7 @@ I am looking for an internship to validate my training from October 04 to Novemb
     <!--les pieds-->
       <footer>
         <div class="monkey-king ">
-          <object type="image/svg+xml" data="./monkey.svg"></object>
+          <object type="image/svg+xml" data="svg/monkey.svg"></object>
         </div>
         <image
           class="immeuble"
@@ -125,6 +123,6 @@ I am looking for an internship to validate my training from October 04 to Novemb
         <p>Ƹ̵̡Ӝ̵̨̄Ʒ Copyright © 2023. All rights reserved for Aunélia. Ƹ̵̡Ӝ̵̨̄Ʒ</p> 
         
       </footer>
-      <script src="home.js"></script>
+      <script src="script/home.js"></script>
   </body>
 </html>

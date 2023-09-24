@@ -220,7 +220,7 @@ ul li a:hover::before{
   }
 }
 
-/**/
+/* éclipse */
 
 #root {
   width: 30vmin;
@@ -285,7 +285,8 @@ ul li a:hover::before{
     transform: rotate(359deg);
   }
 }
-/**/
+
+/* etoile filante */
 
 #layers {
 	height: auto;
