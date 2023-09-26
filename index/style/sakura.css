@@ -4,12 +4,12 @@ html {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 100%;
-    width: 100%;
+    height: auto;
+    width: auto;
     }
 
-.navbar {
-    margin-left: 80%;
+.navbar, .CV, .imgCV {
+    text-align: center;
 }
 
 body {
@@ -18,7 +18,6 @@ body {
     margin: auto;
     z-index: 1;
 }
-
 
 main { 
     background: linear-gradient(#86272c,#febcda);
@@ -56,10 +55,10 @@ main {
     
     @keyframes glow {
         0% {
-            opacity: 0.2; /* Réduit l'opacité minimale */
+            opacity: 0.2; 
         }
         100% {
-            opacity: 0.8; /* Augmente l'opacité maximale */
+            opacity: 0.8; 
         }
     }
     

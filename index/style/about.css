@@ -38,7 +38,7 @@ p {
   border-radius: 1.25rem;
 }
 
-.menu {
+menu {
   width: 100%;
   max-width: 60rem;
   height: 100%;
@@ -127,12 +127,6 @@ body {
   margin-left: 500px;
 }
 
-  .btn {
-    display: inline-block;
-    background-color: var(--container_color);
-    border: none;
-    border-radius: 1.25rem;
-  }
     
   h3,
   p,
@@ -192,5 +186,3 @@ body {
       flex-direction: row;
     }
   }
-
-  

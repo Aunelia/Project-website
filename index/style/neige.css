@@ -26,8 +26,8 @@ canvas {
 	max-height: 50vh;
 position: relative;
 float: left;
-margin-top: 1%;
-margin-left: 10%;
+margin-top: 5%;
+margin-left: 15%;
 z-index: 1000;
 }
 
@@ -206,3 +206,4 @@ z-index: 1000;
     transform: translate(0, 0);
   }
 }
+
