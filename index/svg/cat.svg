@@ -1,3 +1,5 @@
+
+
 <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 783.55 354.91" preserveAspectRatio="xMinYMid meet"  >
   <g id="bongo-cat">
     <g class="head">
@@ -229,9 +231,7 @@
     </g>
   </g>
 
-
   <script href="../lib/gsap.min.js"></script>
-
   <script type="text/javascript">
 
     document.addEventListener("DOMContentLoaded", () => {
@@ -351,6 +351,8 @@
         .add(animateNotes(notesG2), ">0.05")
         .add(animateNotes(notesG3), ">0.25")
 });  
+
+console.log("");
   </script>
 
 
