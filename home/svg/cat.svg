@@ -352,7 +352,7 @@
         .add(animateNotes(notesG3), ">0.25")
 });  
 
-console.log("");
+console.log("Sorry, my cat ate the solutions.");
   </script>
 
 

@@ -99,3 +99,9 @@ p {
     bottom: 0;
     }
 
+.contenue2 {
+  position: absolute;
+  z-index: 2;
+  top: 30%;
+  left: auto;
+}

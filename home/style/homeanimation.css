@@ -112,15 +112,15 @@ ul li a:hover::before{
     padding: 0;
     overflow: hidden;
     position: relative;
-    width: 30%;
-    max-width: 640px;
-    height: 20px;
+    width: 20%;
+    max-width: 25%;
+    height: 5%;
 }
 .defilant > :first-child {
-    display: inline-block;                
-    padding-right: 4em;                 
-    padding-left: 100%;                  
-    white-space: nowrap;                  
+    display: inline-block;                                                  
+    white-space: nowrap;  
+    padding-left: 14em;   
+    padding-right: 0em;             
     animation: defilement-rtl 15s infinite linear;
 
     animation-name: defilement-rtl;       
