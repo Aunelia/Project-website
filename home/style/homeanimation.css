@@ -86,6 +86,7 @@ ul li a {
 }
 
 ul li a::before{
+    max-height: 21px;
     content: attr(data-text);
     position :  absolute;
     color: var(--clr);
