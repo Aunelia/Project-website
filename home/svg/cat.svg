@@ -352,7 +352,7 @@
         .add(animateNotes(notesG3), ">0.25")
 });  
 
-console.log("Sorry, my cat ate the solutions.");
+console.log("Miaou!! rrrrrr %cThe cat eat the solution", "font-style: italic;");
   </script>
 
 
