@@ -55,9 +55,9 @@ p {
   position: absolute;
   top: 0;
   left: 50%;
-  width: 24px;
-  height: 24px;
-  margin-left: -12px;
+  width: 10%;
+  height: 10%;
+  margin-left: -10%;
   border-left: 1px solid #fff;
   border-bottom: 1px solid #fff;
   transform: rotateZ(-45deg);
@@ -102,6 +102,6 @@ p {
 .contenue2 {
   position: absolute;
   z-index: 2;
-  top: 30%;
+  top: 20%;
   left: auto;
 }
