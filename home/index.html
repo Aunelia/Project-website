@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-
 <html lang="en">
   <!-- tête -->
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Aunelia's Home</title>
-    <!--lien vers les autres languages-->
+    <title>Aunélia siteweb</title>
+    <!--lien css -->
+    <link href="../home/style/stylesheet.css" rel="stylesheet" />
     <link href="../home/style/home.css" rel="stylesheet" />
-    <link href="../home/style/homeanimation.css" rel="stylesheet" />
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -31,7 +30,7 @@
       rel="mask-icon"
       href="../home/images/safari-pinned-tab.svg"
       color="#5bbad5"
-    />
+    /> 
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
   </head>
@@ -41,6 +40,7 @@
     <div class="stars"></div>
     <!--contenue principal-->
     <main>
+      <div class="contenair">
       <!-- entete neon-->
       <header>
         <div class="eclipse"></div>
@@ -58,35 +58,39 @@
         <div class="navbar">
           <ul>
             <li style="--clr: #00ff00">
-              <a href="../home/page/Moi.html" data-text="&nbsp;About me"
-                >&nbsp;About me &nbsp;</a
+              <a href="../home/page/presentation.html" data-text="&nbsp;Plus"
+                >&nbsp;Plus &nbsp;</a
               >
             </li>
             <li style="--clr: #00ffff">
-              <a href="../home/page/Projets.html" data-text="&nbsp;Projects"
-                >&nbsp;Projects&nbsp;
+              <a href="../home/page/projets.html" data-text="&nbsp;Projets"
+                >&nbsp;Projets&nbsp;
               </a>
             </li>
             <li style="--clr: #ff00b4">
-              <a href="../home/page/Feu.html" data-text="&nbsp;next goal"
-                >&nbsp;next goal&nbsp;</a
+              <a href="../home/page/prochainement.html" data-text="&nbsp;Prochainement"
+                >&nbsp;Prochainement&nbsp;</a
               >
             </li>
             <li style="--clr: #011efe">
-              <a href="../home/page/Contact.html" data-text="&nbsp;Contact"
+              <a href="../home/page/contact.html" data-text="&nbsp;Contact"
                 >&nbsp;Contact&nbsp;
               </a>
             </li>
           </ul>
+          <div class="bongo-cat">
+            <!-- does not work on firefox :<  -->
+            <object type="image/svg+xml" data="../home/svg/cat.svg"></object>
+          </div>
         </div>
       </nav>
       <!--presentation-->
       <section>
         <article class="presentation">
           <div class="titre">
-            <h3>✩ Welcome to my Website ! ✩</h3>
+            <h3>✩ Bienvenue sur mon siteweb ! ✩</h3>
           </div>
-          <a href="../home/page/WS citation.html">
+          <a href="../home/page/ws-citation.html">
             <img
               class="profil"
               src="../home/images/cutedog.gif"
@@ -108,10 +112,6 @@
             </div>
           </div>
         </div>
-        <div class="bongo-cat">
-          <!-- does not work on firefox :<  -->
-          <object type="image/svg+xml" data="../home/svg/cat.svg"></object>
-        </div>
       </aside>
     </main>
     <!--les pieds-->
@@ -128,6 +128,7 @@
       />
       <p>Ƹ̵̡Ӝ̵̨̄Ʒ Copyright © 2023. All rights reserved for Aunélia. Ƹ̵̡Ӝ̵̨̄Ʒ</p>
     </footer>
+  </div>
     <script src="../home/script/home.js"></script>
   </body>
 </html>
